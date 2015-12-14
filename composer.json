@@ -1,0 +1,24 @@
+{
+	"name": "netztechniker/mailcopy",
+	"description": "Send outgoing mail to additional transports (e.g. mbox)",
+	"keywords": ["mail", "copy", "additional", "transport"],
+	"homepage": "https://github.com/tantegerda1/mailcopy",
+	"license": "GPL-3.0+",
+	"authors": [
+		{
+			"name": "Ludwig Rafelsberger",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">= 5.3.0, <= 5.6.99",
+		"typo3/cms": "6.2.*"
+	},
+	"type": "typo3-cms-extension",
+	"autoload": {
+		"psr-4": { "Netztechniker\\Mailcopy\\": "Classes/" }
+	},
+	"support": {
+		"issues": "https://github.com/tantegerda1/mailcopy/issues"
+	}
+}

@@ -1,0 +1,88 @@
+# cat=Additional Transport 1//1
+# type=boolean
+# label=Enable Additional transport 1
+transports.1.enabled = 1
+
+# cat=Additional Transport 1//2
+# type=options[Send using PHP mail() function=mail, Send via SMTP=smtp, Send using local MTA via sendmail command=sendmail, Store in mbox file=mbox]
+# label=Transport type
+transports.1.type = mbox
+
+
+# cat=Additional Transport 1//10
+# type=string
+# label=SMTP mailserver address: <server:port> of mailserver to connect to. <port> defaults to "25". Only relevant if "Transport type" is set to "Send via SMTP".
+transports.1.smtp.server = localhost:25
+
+# cat=Additional Transport 1//11
+# type=user[EXT:mailcopy/Classes/Utility/ExtensionManagerConfigurationUtility.php:Netztechniker\Mailcopy\Utility\ExtensionManagerConfigurationUtility->buildSmtpEncryptSelector]
+# label=SMTP Transport protocol: Connect to the server using the specified transport protocol. Requires openssl library. You might want to choose ssl, sslv2, sslv3 or tls. Only relevant if "Transport type" is set to "Send via SMTP".
+transports.1.smtp.encrypt =
+
+# cat=Additional Transport 1//12
+# type=string
+# label=SMTP username: If your SMTP server requires authentication, enter your username here. Only relevant if "Transport type" is set to "Send via SMTP".
+transports.1.smtp.username =
+
+# cat=Additional Transport 1//13
+# type=string
+# label=SMTP password: If your SMTP server requires authentication, enter your password here. Only relevant if "Transport type" is set to "Send via SMTP".
+transports.1.smtp.password =
+
+
+# cat=Additional Transport 1//20
+# type=string
+# label=Sendmail command: The command to call to send a mail locally. The default works with most modern UNIX based mail servers (sendmail, postfix, exim). Only relevant if "Transport type" is set to "Send using local MTA via sendmail".
+transports.1.sendmail.command = /usr/bin/sendmail -t -i
+
+
+# cat=Additional Transport 1//30
+# type=string
+# label=Mbox file: Absolute path and filename to write the mails into. This file will be conforming to the mbox format described in RFC 4155 (it is a simple text file with a concatenation of all mails). Only relevant if "Transport type" is set to "Store in mbox file".
+transports.1.mbox.file =
+
+
+
+
+# cat=Additional Transport 2//1
+# type=boolean
+# label=Enable Additional transport 2
+transports.2.enabled = 0
+
+# cat=Additional Transport 2//2
+# type=options[Send using PHP mail() function=mail, Send via SMTP=smtp, Send using local MTA via sendmail command=sendmail, Store in mbox file=mbox]
+# label=Transport type
+transports.2.type = mbox
+
+
+# cat=Additional Transport 2//10
+# type=string
+# label=SMTP mailserver address: <server:port> of mailserver to connect to. <port> defaults to "25". Only relevant if "Transport type" is set to "Send via SMTP".
+transports.2.smtp.server = localhost:25
+
+# cat=Additional Transport 2//11
+# type=user[EXT:mailcopy/Classes/Utility/ExtensionManagerConfigurationUtility.php:Netztechniker\Mailcopy\Utility\ExtensionManagerConfigurationUtility->buildSmtpEncryptSelector]
+# label=SMTP Transport protocol: Connect to the server using the specified transport protocol. Requires openssl library. You might want to choose ssl, sslv2, sslv3 or tls. Only relevant if "Transport type" is set to "Send via SMTP".
+transports.2.smtp.encrypt =
+
+# cat=Additional Transport 2//12
+# type=string
+# label=SMTP username: If your SMTP server requires authentication, enter your username here. Only relevant if "Transport type" is set to "Send via SMTP".
+transports.2.smtp.username =
+
+# cat=Additional Transport 2//13
+# type=string
+# label=SMTP password: If your SMTP server requires authentication, enter your password here. Only relevant if "Transport type" is set to "Send via SMTP".
+transports.2.smtp.password =
+
+
+# cat=Additional Transport 2//20
+# type=string
+# label=Sendmail command: The command to call to send a mail locally. The default works with most modern UNIX based mail servers (sendmail, postfix, exim). Only relevant if "Transport type" is set to "Send using local MTA via sendmail".
+transports.2.sendmail.command = /usr/bin/sendmail -t -i
+
+
+# cat=Additional Transport 2//30
+# type=string
+# label=Mbox file: Absolute path and filename to write the mails into. This file will be conforming to the mbox format described in RFC 4155 (it is a simple text file with a concatenation of all mails). Only relevant if "Transport type" is set to "Store in mbox file".
+transports.2.mbox.file =
